@@ -1,1 +1,281 @@
-/* Add you CSS here */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5; /* Soft off-white for a clean look */
+  color: #000000; /* Dark gray text for contrast */
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #bfd1d3; /* Lighter shade with grey */
+  color: black; /* Ensure text remains readable */
+  text-align: center;
+  padding: 20px 15px; /* Restore original padding */
+  width: 100%; /* Restore original width */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+#hero h1, #hero p {
+  color: black; /* Ensure header and paragraph text are black */
+}
+
+#hero h1 {
+  padding: 4px 0; /* Reduced padding for the hero section heading */
+  font-size: 2em; /* Larger font size for prominence */
+  font-weight: bold; /* Emphasize the main heading */
+  margin-bottom: 10px; /* Reduce space below the heading */
+}
+
+#hero p {
+  font-size: 0.90rem;
+  margin-top: 0; /* Remove extra space above the paragraph */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* About Me Section */
+#about {
+  max-width: 450px;
+  background-color: transparent; /* Remove background color */
+  padding: 24px;
+  margin: 0 auto; /* Center align the section */
+  text-align: center; /* Center align the content */
+}
+
+#about p {
+  font-size: 0.95em;
+  max-width: 70ch; /* Limit line length for better readability */
+  margin: 0 auto; /* Center align the paragraph */
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Adjust spacing for section headers */
+#about h2, #skills h2, #projects h2 {
+  margin-top: 10px; /* Reduce top margin to move headers closer */
+}
+
+/* Increase spacing between headers and paragraphs */
+#about h2 + p, #projects h2 + p {
+  margin-bottom: 15px; /* Add more space between h2 and p */
+}
+
+/* Skills Section */
+#skills {
+  max-width: 450px;
+  background-color: transparent; /* Remove background color */
+  padding: 24px;
+  text-align: center; /* Center the entire section */
+  margin: 0 auto; /* Center align the section */
+}
+
+#skills ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  text-align: center; /* Center align the list */
+}
+
+#skills li {
+  display: inline-block; /* Align items horizontally */
+  margin: 5px 10px; /* Add spacing between items */
+}
+
+/* Align Skills Icon with List Items */
+.skills-icon svg {
+  width: 44px; /* Increased size */
+  height: 44px;
+  vertical-align: middle; /* Align with the text */
+  margin-right: 8px; /* Add spacing between icon and text */
+  display: inline-block; /* Ensure it aligns inline with the text */
+}
+
+/* Projects Section */
+#projects {
+  max-width: 450px;
+  background-color: transparent; /* Remove background color */
+  padding: 24px;
+  margin: 0 auto; /* Center align the section */
+  text-align: center; /* Center align the content */
+}
+
+#projects p {
+  text-align: center; /* Center the paragraph text */
+}
+
+#projects ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add spacing between the divs */
+  padding: 0;
+  list-style: none;
+}
+
+#projects li {
+  display: inline-block; /* Make list items inline for better centering */
+  margin: 5px 10px; /* Add spacing between items */
+  margin-bottom: 15px; /* Add spacing between project items */
+}
+
+#projects ul li .project-detail {
+  font-size: 0.9em; /* Slightly smaller text for details */
+  color: #555; /* Subtle color for project details */
+}
+
+/* Update the project-detail divs to match the hero section's background color */
+.project-detail {
+  background-color: #bed1d2; /* Same as #hero background */
+  width: 250px; /* Increased width */
+  height: 150px; /* Increased height */
+  margin: 10px auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push content to top and bottom */
+  align-items: center;
+  color: black;;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project-detail p:last-of-type {
+  font-size: 0.9em; /* Slightly smaller font size */
+  font-weight: bold;
+}
+
+.project-detail p{
+  font-size: 0.90em;
+  width: 29ch;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Match body background */
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#contact h2 {
+  color: black; /* Change h2 color to black */
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-icons a svg {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover svg {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #0B2E33; /* Match navigation bar */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  color: white; /* Match the footer text color to the navigation bar */
+}
+
+/* Navigation Bar Styles */
+nav {
+  background-color: #0B2E33; /* Darker evergreen color */
+  color: white;
+  padding: 10px;
+  margin-bottom: 0; /* Ensure no margin below the navigation bar */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange items horizontally */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+  display: inline; /* Ensure list items are inline */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Ensure links are readable */
+}
+
+nav ul li a:hover {
+  color: #B0C7C9; /* Match hero section background color */
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+  background-color: rgba(176, 199, 201, 0.2); /* Light overlay matching hero background */
+  transition: background-color 0.3s ease;
+}
+
+/* Remove space between nav and hero */
+#hero {
+  margin-top: 0; /* Ensure no margin above the hero section */
+}
+
+/* Reduce the margins between sections */
+#about, #skills, #projects, #contact {
+  margin: 5px auto; /* Minimized vertical spacing */
+}
+
+/* Update section h2s to match the navigation bar and footer color */
+section h2 {
+  color: #0B2E33;
+}
+
+/* Update all SVG icons to match the navigation bar and footer color */
+svg {
+  fill: #0B2E33;
+}
+
+/* Improve font hierarchy */
+h1 {
+  font-size: 2.5em; /* Larger size for main headings */
+  font-weight: bold; /* Emphasize importance */
+}
+
+h2 {
+  font-size: 2em; /* Slightly smaller than h1 */
+  font-weight: bold;
+}
+
+/* Set all paragraph text to black */
+p {
+  color: black; /* Set all paragraph text to black */
+}
