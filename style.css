@@ -236,13 +236,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #B0C7C9; /* Match hero section background color */
+  color: #B0C7C9; /* Text color changes to teal on hover */
   transition: color 0.3s ease;
-}
-
-nav ul li:hover {
-  background-color: rgba(176, 199, 201, 0.2); /* Light overlay matching hero background */
-  transition: background-color 0.3s ease;
 }
 
 /* Remove space between nav and hero */
