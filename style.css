@@ -14,31 +14,31 @@ h1, h2 {
 
 /* Hero Section */
 #hero {
-  background-color: #bfd1d3; /* Lighter shade with grey */
-  color: black; /* Ensure text remains readable */
+  background-color: #bfd1d3;
+  color: black;
   text-align: center;
-  padding: 20px 15px; /* Restore original padding */
-  width: 100%; /* Restore original width */
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  padding: 20px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
 }
 
 #hero h1, #hero p {
-  color: black; /* Ensure header and paragraph text are black */
+  color: black;
 }
 
 #hero h1 {
-  padding: 4px 0; /* Reduced padding for the hero section heading */
-  font-size: 2em; /* Larger font size for prominence */
-  font-weight: bold; /* Emphasize the main heading */
-  margin-bottom: 10px; /* Reduce space below the heading */
+  padding: 4px 0;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #hero p {
   font-size: 0.90rem;
-  margin-top: 0; /* Remove extra space above the paragraph */
+  margin-top: 0;
 }
 
 .profile-image {
@@ -51,7 +51,7 @@ h1, h2 {
 /* About Me Section */
 #about {
   max-width: 450px;
-  background-color: transparent; /* Remove background color */
+  background-color: transparent; 
   padding: 24px;
   margin: 0 auto; /* Center align the section */
   text-align: center; /* Center align the content */
